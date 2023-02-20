@@ -14,7 +14,7 @@ autoIncrement: true},
 product_id: {
   type: DataTypes.INTEGER,
   references: {
-    model: "products",
+    model: "product",
     key: "id"
   }
 },

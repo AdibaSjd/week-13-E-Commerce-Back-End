@@ -30,8 +30,8 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
 console.log(req.body)
 Category.create(req.body)
-.then(newCategorie=>{
-  res.json(newCategorie)
+.then(newCategory=>{
+  res.json(newCategory)
 })
 .catch(err=> res.status(500).json(err))
   // create a new category
@@ -53,7 +53,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   Category.destroy({
     where: {
-      id: req.params.id,
+      id: req.params.id
     },
   })
     .then((deletedCategory) => {

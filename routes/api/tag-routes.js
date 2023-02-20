@@ -36,7 +36,7 @@ Tag.create(req.body)
 });
 
 router.put('/:id', (req, res) => {
-  Category.update(res.body, {
+  Tag.update(res.body, {
     where:{
       id: req.params.id,
     }
@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  Category.destroy({
+  Tag.destroy({
     where: {
       id: req.params.id,
     },
