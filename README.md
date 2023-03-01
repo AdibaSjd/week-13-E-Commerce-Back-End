@@ -26,8 +26,6 @@ Customer asked for a way to see products in the back end being able to update, a
  
  
 
-My main issue was getting my put routes to render in insomnia. 
-
  
 
 ## General info

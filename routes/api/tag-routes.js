@@ -36,12 +36,13 @@ Tag.create(req.body)
 });
 
 router.put('/:id', (req, res) => {
-  Tag.update(res.body, {
+  Tag.update(req.body, {
     where:{
       id: req.params.id,
     }
   })
-  .then(newTags=>{
+  .then(newTags=>{ 
+    console.log(newTags);
     res.json(newTags)
   })
   .catch(err=> res.status(500).json(err))
