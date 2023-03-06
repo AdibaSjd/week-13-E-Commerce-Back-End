@@ -38,17 +38,13 @@ Category.create(req.body)
 });
 
 router.put('/:id', (req, res) => {
-  Category.update(res.body, {
-    where:{
+  Category.update(req.body, {
+    where: {
       id: req.params.id,
-    }
+    },
   })
-  .then(newCategorie=>{
-    console.log(newCategorie);
-    res.json(newCategorie)
-  })
-  .catch(err=> res.status(500).json(err))
-  // update a category by its `id` value
+    .then((category) => res.status(200).json(category))
+    .catch((err) => res.status(400).json(err));
 });
 
 router.delete('/:id', (req, res) => {

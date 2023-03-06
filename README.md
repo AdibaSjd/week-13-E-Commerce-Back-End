@@ -29,10 +29,10 @@ Customer asked for a way to see products in the back end being able to update, a
  
 
 ## General info
-This is a page developed through Java Script, sequlize and later loaded up through insomnia. The functionality through insomnia allows the user to manipulate routes created allowing for delete, update and post through the back end. The user is presented with insomnia which they can view all products, tags and categories in the page
+This is developed through Java Script, sequlize and later loaded up through insomnia. The functionality through insomnia allows the user to manipulate routes created allowing for delete, update and post through the back end. The user is presented with insomnia which they can view all products, tags and categories in the page
 
-## Page link
-
+## video link
+video link: https://drive.google.com/file/d/1Cy2Zkm4ttxFZ_wsS_gr0uuBsDYL2kIFD/view
 
 
 
