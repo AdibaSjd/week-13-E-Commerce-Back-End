@@ -44,6 +44,7 @@ router.put('/:id', (req, res) => {
     }
   })
   .then(newCategorie=>{
+    console.log(newCategorie);
     res.json(newCategorie)
   })
   .catch(err=> res.status(500).json(err))
